@@ -14,6 +14,6 @@ Un lien de redirection est implanté en haut a gauche du formulaire qui s'intitu
 
 Vous pouvez modifier ou supprimer un/des article selon vos désirs. 
 
-#enjoy!
+enjoy!
  
 
