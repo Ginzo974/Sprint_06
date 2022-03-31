@@ -51,7 +51,7 @@ if (!empty($_GET['modifid'])) {
             $insererArticle = "UPDATE gztableau set reference='$reference',nom_article='$nom_article',descript='$description',prix_achat='$prix_achat',prix_vente='$prix_vente',quantite_stock='$quantite_stock' where id=$id;";
             $result = mysqli_query($bdd, $insererArticle);
             if ($result) {
-                header('location:affiche.php');
+                header('location:index.php');
             } else {
                 die(mysqli_error($bdd));
             }

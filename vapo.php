@@ -58,7 +58,7 @@ if (isset($_POST['envoyer'])) {
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <img src="img/vapshop.webp" width="120px" height="100px">
-            <a class="navbar-re" href="affiche.php">Retour vers l'accueil</a>
+            <a class="navbar-re" href="index.php">Retour vers l'accueil</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
