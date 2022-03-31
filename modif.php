@@ -1,5 +1,20 @@
 <?php
-$bdd = new mysqli('localhost', 'root', '', 'ginzvape');
+try {
+    // dev configuration
+    if (strcmp($_SERVER['ENVIRONMENT_TYPE'], "development") == 0) {
+        $bdd = new mysqli(
+            'localhost',
+            'root',
+            '',
+            'ginzvape'
+        );
+    }
+    if (strcmp($_SERVER['ENVIRONMENT_TYPE'], "production") == 0) {
+        $bdd = new mysqli('109.234.164.161', $_SERVER['DB_USER'], $_SERVER['DB_PASSWORD'], 'sc1lgvu9627_louis-quentin.sprint-06');
+    }
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
 
 
 if (!empty($_GET['modifid'])) {
